@@ -8,6 +8,8 @@
 #include <WS2tcpip.h>
 #include <stdlib.h>
 
+#include "structs.h"
+
 // Need to link with Ws2_32.lib
 #pragma comment (lib, "Ws2_32.lib")
 // #pragma comment (lib, "Mswsock.lib")
@@ -22,6 +24,18 @@
 int main()
 {
 	char str[MAX_MSG_LEN];
+
+
+	printf("Welcome come back\n");
+
+	printf("size of atb_state_t is %d\n", sizeof(atb_state_t));
+
+	printf("size of atb_eid_data_t is %d\n", sizeof(atb_eid_data_t));
+
+	printf("size of atb_bail_data_t is %d\n", sizeof(atb_bail_data_t));
+
+
+
 
 	WSADATA wsaData;
 	int iResult;
